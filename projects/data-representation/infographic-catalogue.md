@@ -1,8 +1,8 @@
 # Infographic 候选目录
 
-> **工作估算：约 18 张，最终数量未定。** 下方原有 13 项是宽泛候选主题，不等于逐张制作清单。按当前建议的粒度，宽泛主题会在不同机制或例子处拆分；后续再根据图面阅读尺寸、信息密度和 worked example 的可读性合并或调整。
+> **工作估算：约 19 张，最终数量未定。** 下方原有 13 项是宽泛候选主题，不等于逐张制作清单。按当前建议的粒度，宽泛主题会在不同机制或例子处拆分；后续再根据图面阅读尺寸、信息密度和 worked example 的可读性合并或调整。
 
-## 建议的逐张工作目录（约 18 张）
+## 建议的逐张工作目录（约 19 张）
 
 这份目录用于帮助判断整套内容的规模。每张围绕一个主要学习问题和一条解释主线；编号是工作顺序，不是考试章节或已锁定的发布数量。
 
@@ -10,24 +10,25 @@
 |---:|---|---|
 | 1 | Bits, Bytes & Magnitudes | 一个 bit 有两种状态；bit 数如何决定 pattern 数；直接建立 `1 byte = 8 bits`、`2^8 = 256 patterns`。 |
 | 2 | Bits, Bytes & Magnitudes | byte 以上的容量单位，以及十进制与二进制前缀各自表示的数量。 |
-| 3 | Representing Numbers | denary、binary 与 hexadecimal 的位值、转换关系及 Hex 的紧凑读写方式。 |
-| 4 | Representing Numbers | unsigned 与 signed 整数怎样解释固定宽度的位模式，以及各自的数值范围。 |
-| 5 | Representing Numbers | 二进制整数加减如何进行，以及固定宽度下 overflow 怎样出现。 |
-| 6 | Representing Numbers | BCD 如何逐个十进制数位编码，以及它与普通 binary 整数的区别。 |
-| 7 | Representing Numbers | logical、arithmetic 与 cyclic shifts 如何移动位，并处理移出或补入的位。 |
-| 8 | Representing Numbers | bitwise logic 与 masks 如何检查、保留或改变指定位置的位。 |
-| 9 | Representing Numbers | floating-point 的字段如何表示数值，以及位宽对范围和精度的影响。 |
-| 10 | Representing Text | 字符如何映射到字符代码并保存为位模式；用 ASCII 与 Unicode 建立范围与编码的概念。 |
-| 11 | Representing Images | bitmap 如何用像素网格、resolution 与 colour depth 描述图像。 |
-| 12 | Representing Images | vector 图形如何用对象、属性与绘制顺序描述图像。 |
-| 13 | Representing Sound | 连续波形如何经过时间采样和振幅量化成为数字声音。 |
-| 14 | Storage & Compression | bitmap 图像的像素参数如何估算未压缩数据量。 |
-| 15 | Storage & Compression | 声音的 sample rate、sample resolution、声道与时长如何估算未压缩数据量。 |
-| 16 | Storage & Compression | RLE 如何利用连续重复的数据形成可逆的压缩表示。 |
-| 17 | Storage & Compression | Huffman 如何利用符号出现频率构造不同长度的可逆编码。 |
-| 18 | Storage & Compression | 有损压缩如何移除部分信息，以及体积和可感知质量如何取舍。 |
+| 3 | Representing Numbers | 同一个 denary 整数如何写成 binary 与 hexadecimal；binary 位值和 hexadecimal 四位分组如何连接。 |
+| 4 | Representing Numbers | 如何用 powers of 2 将 binary 转为 denary，以及用连续除以 2 和倒序余数将 denary 转为 binary。 |
+| 5 | Representing Numbers | unsigned 与 signed 整数怎样解释固定宽度的位模式，以及各自的数值范围。 |
+| 6 | Representing Numbers | 二进制整数加减如何进行，以及固定宽度下 overflow 怎样出现。 |
+| 7 | Representing Numbers | BCD 如何逐个十进制数位编码，以及它与普通 binary 整数的区别。 |
+| 8 | Representing Numbers | logical、arithmetic 与 cyclic shifts 如何移动位，并处理移出或补入的位。 |
+| 9 | Representing Numbers | bitwise logic 与 masks 如何检查、保留或改变指定位置的位。 |
+| 10 | Representing Numbers | floating-point 的字段如何表示数值，以及位宽对范围和精度的影响。 |
+| 11 | Representing Text | 字符如何映射到字符代码并保存为位模式；用 ASCII 与 Unicode 建立范围与编码的概念。 |
+| 12 | Representing Images | bitmap 如何用像素网格、resolution 与 colour depth 描述图像。 |
+| 13 | Representing Images | vector 图形如何用对象、属性与绘制顺序描述图像。 |
+| 14 | Representing Sound | 连续波形如何经过时间采样和振幅量化成为数字声音。 |
+| 15 | Storage & Compression | bitmap 图像的像素参数如何估算未压缩数据量。 |
+| 16 | Storage & Compression | 声音的 sample rate、sample resolution、声道与时长如何估算未压缩数据量。 |
+| 17 | Storage & Compression | RLE 如何利用连续重复的数据形成可逆的压缩表示。 |
+| 18 | Storage & Compression | Huffman 如何利用符号出现频率构造不同长度的可逆编码。 |
+| 19 | Storage & Compression | 有损压缩如何移除部分信息，以及体积和可感知质量如何取舍。 |
 
-**粒度校准：** 若压缩到约 12–14 张，会合并更多不同机制；若拆到每种编码或表示各自独立，可能超过 20 张。当前按约 18 张作为中间粒度，先逐张制作和检查，再依据真实版面决定是否合并或拆分。图面只呈现知识、解释、术语和必要例子，不放 syllabus 标签或覆盖率信息。
+**粒度校准：** 若压缩到约 12–14 张，会合并更多不同机制；若拆到每种编码或表示各自独立，可能超过 20 张。当前按约 19 张作为中间粒度，先逐张制作和检查，再依据真实版面决定是否合并或拆分。图面只呈现知识、解释、术语和必要例子，不放 syllabus 标签或覆盖率信息。
 
 ## 决定合并或拆分的标准
 
@@ -60,6 +61,15 @@
 - **边界与易混点：** Hex 是让人更紧凑地读写 binary 的表示法，不是另一种底层数据。
 - **模块连接：** Representing Numbers；可连接后续文本编码中的“数值如何被解释”。
 - **状态：** 第三项已完成 content brief、visual brief、信息图与英文发布文案；文件位于 `projects/data-representation/number-bases/`。
+
+### 3. Binary 与 denary 互转
+
+- **学习问题：** 给定一个 binary 数或 denary 数，怎样一步步算出另一种表示？
+- **解释主线：** Binary → denary：将每一位乘以对应的 2 的幂后相加；denary → binary：连续除以 2，记录余数并自下而上读取。
+- **例子种子：** `110101₂ = 53₁₀`；同一数反向计算以检查结果。
+- **边界与易混点：** 最右一位对应 `2⁰ = 1`；除法余数要从下往上读。示例按正整数讲解，`0₁₀ = 0₂` 可作为简短边界。
+- **模块连接：** Representing Numbers；在 denary/binary/hex 表示关系之后，单独讲双向转换的可复用步骤。
+- **状态：** Content brief、visual brief、成图、英文发布文案和最终图像复核均已完成并标记 READY；文件位于 `projects/data-representation/binary-conversion/`。
 
 ### 3. 有符号整数与整数运算
 

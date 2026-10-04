@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1086" height="1556" viewBox="0 0 1086 1556" role="img" aria-labelledby="title desc">
+  <title id="title">Binary to denary and denary to binary conversion</title>
+  <desc id="desc">An educational infographic showing two ways to convert 53 and 110101: add the selected powers of two, or repeatedly divide by two and read remainders upwards.</desc>
+  <defs>
+    <pattern id="grain" width="120" height="120" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="18" r="1" fill="#183142" opacity=".035"/>
+      <circle cx="76" cy="44" r="1" fill="#183142" opacity=".025"/>
+      <circle cx="43" cy="98" r="1" fill="#183142" opacity=".03"/>
+      <path d="M5 74h19M88 9h14M65 115h23" stroke="#183142" stroke-width=".7" opacity=".022"/>
+    </pattern>
+    <marker id="arrowTeal" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5 0 10z" fill="#218F8A"/>
+    </marker>
+    <marker id="arrowCopper" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5 0 10z" fill="#D68D45"/>
+    </marker>
+    <marker id="arrowSlate" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0L8 4 0 8z" fill="#5B7687"/>
+    </marker>
+    <style>
+      .serif { font-family: Georgia, 'Times New Roman', serif; fill: #183142; }
+      .sans { font-family: Arial, Helvetica, sans-serif; fill: #183142; }
+      .mono { font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', monospace; fill: #183142; }
+      .muted { fill: #5B7687; }
+      .teal { fill: #218F8A; }
+      .copper { fill: #B87432; }
+      .coral { fill: #C65D52; }
+      .rule { stroke: #AAB9B9; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Paper -->
+  <rect width="1086" height="1556" fill="#F4EFE4"/>
+  <rect width="1086" height="1556" fill="url(#grain)"/>
+  <path d="M56 50H1030" stroke="#183142" stroke-width="2"/>
+  <text x="62" y="79" class="sans muted" font-size="18" font-weight="700" letter-spacing="2.4">DATA REPRESENTATION  /  NUMBER SYSTEMS</text>
+  <text x="58" y="143" class="serif" font-size="61" font-weight="700" letter-spacing="-1.8">Binary ↔ Denary:</text>
+  <text x="62" y="201" class="serif" font-size="48" font-weight="700" letter-spacing="-1">How to Convert</text>
+  <text x="1024" y="199" text-anchor="end" class="sans muted" font-size="23">Two methods. One value.</text>
+
+  <!-- Shared value bridge -->
+  <g>
+    <path d="M62 234H1024Q1038 234 1038 248V315Q1038 329 1024 329H62Q48 329 48 315V248Q48 234 62 234Z" fill="#DFE7E5" stroke="#5B7687" stroke-width="1.5"/>
+    <path d="M76 248H1010" stroke="#fff" stroke-width="1" opacity=".75"/>
+    <text x="90" y="279" class="sans muted" font-size="18" font-weight="700" letter-spacing="1.8">THE SAME WHOLE NUMBER</text>
+    <text x="92" y="314" class="mono" font-size="36" font-weight="700">53₁₀</text>
+    <path d="M205 303H380" fill="none" stroke="#218F8A" stroke-width="3" marker-end="url(#arrowTeal)"/>
+    <path d="M380 315H205" fill="none" stroke="#5B7687" stroke-width="1.5" marker-end="url(#arrowSlate)"/>
+    <text x="472" y="312" class="serif copper" font-size="41" font-weight="700">=</text>
+    <text x="548" y="314" class="mono" font-size="36" font-weight="700">110101₂</text>
+  </g>
+
+  <!-- Binary to denary -->
+  <g>
+    <circle cx="80" cy="379" r="20" fill="#218F8A"/>
+    <text x="80" y="386" text-anchor="middle" class="sans" fill="#fff" font-size="18" font-weight="700">1</text>
+    <text x="116" y="391" class="serif" font-size="36" font-weight="700">Binary → denary</text>
+    <text x="1024" y="388" text-anchor="end" class="sans muted" font-size="18" letter-spacing="1.1">READ THE PLACE VALUES</text>
+    <text x="82" y="429" class="sans muted" font-size="22">Each 1 adds its place value. Each 0 adds zero.</text>
+
+    <!-- subtle rail -->
+    <path d="M112 449H973" stroke="#AAB9B9" stroke-width="2"/>
+    <!-- 2^5 -->
+    <g transform="translate(145 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono muted" font-size="20">2⁵</text>
+      <text x="0" y="503" text-anchor="middle" class="mono" font-size="29" font-weight="700">32</text>
+      <path d="M0 515V530" stroke="#218F8A" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#218F8A"/>
+      <text x="0" y="569" text-anchor="middle" class="mono" fill="#fff" font-size="35" font-weight="700">1</text>
+      <text x="0" y="613" text-anchor="middle" class="mono copper" font-size="25" font-weight="700">+32</text>
+      <path d="M0 588V596" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+    </g>
+    <!-- 2^4 -->
+    <g transform="translate(303 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono muted" font-size="20">2⁴</text>
+      <text x="0" y="503" text-anchor="middle" class="mono" font-size="29" font-weight="700">16</text>
+      <path d="M0 515V530" stroke="#218F8A" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#218F8A"/>
+      <text x="0" y="569" text-anchor="middle" class="mono" fill="#fff" font-size="35" font-weight="700">1</text>
+      <text x="0" y="613" text-anchor="middle" class="mono copper" font-size="25" font-weight="700">+16</text>
+      <path d="M0 588V596" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+    </g>
+    <!-- 2^3 -->
+    <g transform="translate(461 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono muted" font-size="20">2³</text>
+      <text x="0" y="503" text-anchor="middle" class="mono" font-size="29" font-weight="700">8</text>
+      <path d="M0 515V530" stroke="#AAB9B9" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#DFE7E5" stroke="#AAB9B9" stroke-width="1.5"/>
+      <text x="0" y="569" text-anchor="middle" class="mono muted" font-size="35" font-weight="700">0</text>
+      <text x="0" y="613" text-anchor="middle" class="mono muted" font-size="25">+0</text>
+    </g>
+    <!-- 2^2 -->
+    <g transform="translate(619 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono muted" font-size="20">2²</text>
+      <text x="0" y="503" text-anchor="middle" class="mono" font-size="29" font-weight="700">4</text>
+      <path d="M0 515V530" stroke="#218F8A" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#218F8A"/>
+      <text x="0" y="569" text-anchor="middle" class="mono" fill="#fff" font-size="35" font-weight="700">1</text>
+      <text x="0" y="613" text-anchor="middle" class="mono copper" font-size="25" font-weight="700">+4</text>
+      <path d="M0 588V596" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+    </g>
+    <!-- 2^1 -->
+    <g transform="translate(777 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono muted" font-size="20">2¹</text>
+      <text x="0" y="503" text-anchor="middle" class="mono" font-size="29" font-weight="700">2</text>
+      <path d="M0 515V530" stroke="#AAB9B9" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#DFE7E5" stroke="#AAB9B9" stroke-width="1.5"/>
+      <text x="0" y="569" text-anchor="middle" class="mono muted" font-size="35" font-weight="700">0</text>
+      <text x="0" y="613" text-anchor="middle" class="mono muted" font-size="25">+0</text>
+    </g>
+    <!-- 2^0 -->
+    <g transform="translate(935 0)">
+      <text x="0" y="470" text-anchor="middle" class="mono teal" font-size="20" font-weight="700">2⁰</text>
+      <text x="0" y="503" text-anchor="middle" class="mono teal" font-size="35" font-weight="700">1</text>
+      <path d="M0 515V530" stroke="#218F8A" stroke-width="2"/>
+      <rect x="-38" y="531" width="76" height="54" rx="11" fill="#218F8A"/>
+      <text x="0" y="569" text-anchor="middle" class="mono" fill="#fff" font-size="35" font-weight="700">1</text>
+      <text x="0" y="613" text-anchor="middle" class="mono copper" font-size="25" font-weight="700">+1</text>
+      <path d="M0 588V596" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+    </g>
+
+    <path d="M84 635H1002" stroke="#D68D45" stroke-width="2"/>
+    <path d="M84 635v17h918v-17" fill="none" stroke="#D68D45" stroke-width="2"/>
+    <text x="543" y="679" text-anchor="middle" class="mono copper" font-size="30" font-weight="700">32 + 16 + 4 + 1 = 53</text>
+  </g>
+
+  <!-- connecting hinge -->
+  <g>
+    <path d="M72 715H1014" stroke="#AAB9B9" stroke-width="1.5"/>
+    <circle cx="543" cy="715" r="24" fill="#D68D45"/>
+    <text x="543" y="724" text-anchor="middle" class="serif" fill="#fff" font-size="28" font-weight="700">53</text>
+    <path d="M543 741V758" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+  </g>
+
+  <!-- Denary to binary -->
+  <g>
+    <circle cx="80" cy="790" r="20" fill="#D68D45"/>
+    <text x="80" y="797" text-anchor="middle" class="sans" fill="#fff" font-size="18" font-weight="700">2</text>
+    <text x="116" y="802" class="serif" font-size="36" font-weight="700">Denary → binary</text>
+    <text x="1024" y="800" text-anchor="end" class="sans muted" font-size="18" letter-spacing="1.1">FOLLOW THE REMAINDERS UP</text>
+    <text x="82" y="838" class="sans muted" font-size="22">Divide by 2. Use each quotient in the next step; stop at 0.</text>
+    <text x="139" y="872" class="sans muted" font-size="17" font-weight="700" letter-spacing="1.1">DIVISION</text>
+    <text x="692" y="872" text-anchor="middle" class="sans muted" font-size="17" font-weight="700" letter-spacing="1.1">REMAINDER</text>
+
+    <path d="M851 1186V886" fill="none" stroke="#D68D45" stroke-width="3" marker-end="url(#arrowCopper)"/>
+    <text x="881" y="1024" transform="rotate(-90 881 1024)" class="sans copper" font-size="14" font-weight="700" letter-spacing="1.7">BOTTOM TO TOP</text>
+
+    <!-- rows -->
+    <g class="mono" font-size="29">
+      <path d="M124 878H816" class="rule" opacity=".55"/>
+      <text x="142" y="912">53 ÷ 2 = 26</text>
+      <rect x="665" y="882" width="54" height="40" rx="20" fill="#F1DCC2" stroke="#D68D45" stroke-width="1.5"/><text x="692" y="910" text-anchor="middle" class="copper" font-weight="700" font-size="28">1</text>
+
+      <path d="M124 932H816" class="rule" opacity=".55"/>
+      <text x="142" y="966">26 ÷ 2 = 13</text>
+      <rect x="665" y="936" width="54" height="40" rx="20" fill="#DFE7E5" stroke="#AAB9B9" stroke-width="1.5"/><text x="692" y="964" text-anchor="middle" class="muted" font-weight="700" font-size="28">0</text>
+
+      <path d="M124 986H816" class="rule" opacity=".55"/>
+      <text x="142" y="1020">13 ÷ 2 = 6</text>
+      <rect x="665" y="990" width="54" height="40" rx="20" fill="#F1DCC2" stroke="#D68D45" stroke-width="1.5"/><text x="692" y="1018" text-anchor="middle" class="copper" font-weight="700" font-size="28">1</text>
+
+      <path d="M124 1040H816" class="rule" opacity=".55"/>
+      <text x="142" y="1074">6 ÷ 2 = 3</text>
+      <rect x="665" y="1044" width="54" height="40" rx="20" fill="#DFE7E5" stroke="#AAB9B9" stroke-width="1.5"/><text x="692" y="1072" text-anchor="middle" class="muted" font-weight="700" font-size="28">0</text>
+
+      <path d="M124 1094H816" class="rule" opacity=".55"/>
+      <text x="142" y="1128">3 ÷ 2 = 1</text>
+      <rect x="665" y="1098" width="54" height="40" rx="20" fill="#F1DCC2" stroke="#D68D45" stroke-width="1.5"/><text x="692" y="1126" text-anchor="middle" class="copper" font-weight="700" font-size="28">1</text>
+
+      <path d="M124 1148H816" class="rule" opacity=".55"/>
+      <text x="142" y="1182">1 ÷ 2 = 0</text>
+      <rect x="665" y="1152" width="54" height="40" rx="20" fill="#F1DCC2" stroke="#D68D45" stroke-width="1.5"/><text x="692" y="1180" text-anchor="middle" class="copper" font-weight="700" font-size="28">1</text>
+      <path d="M124 1202H816" class="rule" opacity=".55"/>
+    </g>
+
+    <text x="142" y="1237" class="sans muted" font-size="20">Read upward to form binary.</text>
+    <path d="M448 1227H594" stroke="#D68D45" stroke-width="2" marker-end="url(#arrowCopper)"/>
+    <text x="642" y="1237" class="mono copper" font-size="31" font-weight="700">110101₂</text>
+    <text x="142" y="1280" class="sans muted" font-size="19">Check: add its place values →</text>
+    <text x="462" y="1280" class="mono" font-size="24" font-weight="700">32 + 16 + 4 + 1 = 53</text>
+  </g>
+
+  <!-- takeaway + boundary -->
+  <g>
+    <path d="M64 1311H1022" stroke="#183142" stroke-width="1.5"/>
+    <text x="68" y="1344" class="sans teal" font-size="17" font-weight="700" letter-spacing="1.5">KEEP THE TWO DIRECTIONS STRAIGHT</text>
+    <text x="68" y="1377" class="serif" font-size="24" font-weight="700">Binary → add selected powers of 2.</text>
+    <text x="68" y="1407" class="serif" font-size="24" font-weight="700">Denary → divide by 2; read remainders upwards.</text>
+    <rect x="760" y="1327" width="262" height="73" rx="13" fill="#DFE7E5" stroke="#AAB9B9" stroke-width="1.2"/>
+    <text x="782" y="1354" class="sans muted" font-size="16" font-weight="700" letter-spacing="1.1">ZERO IS A DIRECT CASE</text>
+    <text x="782" y="1386" class="mono teal" font-size="27" font-weight="700">0₁₀ = 0₂</text>
+  </g>
+
+  <!-- Publisher signature. Exact master wording, colors, and proportions; final vector layer. -->
+  <path d="M58 1434H1028" stroke="#AAB9B9" stroke-width="1.2"/>
+  <svg x="64" y="1450" width="260" height="78" viewBox="0 0 260 78">
+    <text x="8" y="32" fill="#183142" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="700">Learn CS with us</text>
+    <circle cx="11" cy="57" r="3" fill="#218F8A"/>
+    <text x="21" y="63" fill="#5B7687" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="500">learncs.withus.fun</text>
+  </svg>
+  <text x="1024" y="1488" text-anchor="end" class="sans muted" font-size="16">A number can change its notation</text>
+  <text x="1024" y="1512" text-anchor="end" class="sans muted" font-size="16">without changing its value.</text>
+</svg>
