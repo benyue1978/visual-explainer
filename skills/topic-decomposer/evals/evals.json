@@ -1,0 +1,28 @@
+{
+  "skill_name": "topic-decomposer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Break Cambridge A-level Data Representation into an infographic learning path. Keep it knowledge-first, use syllabus only for an internal concept-family coverage check, and estimate a sensible number without treating it as fixed. Do not put syllabus references on the artwork plan.",
+      "expected_output": "An ordered, concept-led topic map with learner questions, explicit boundaries, provisional count, internal coverage separated from learner-facing content, and no assumption that one objective maps to one infographic.",
+      "files": ["../../projects/data-representation/README.md", "../../projects/data-representation/coverage-matrix.md", "../../projects/data-representation/infographic-catalogue.md"],
+      "expectations": [
+        "The proposed sequence is organized around learner questions and conceptual dependencies rather than syllabus objective order.",
+        "The count is explicitly provisional, and split/merge decisions use explanation and readable density.",
+        "Any curriculum coverage audit is clearly internal and no syllabus markers are proposed for artwork.",
+        "The byte definition is stated plainly without irrelevant history."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Plan a short infographic series explaining how a web browser loads a page for first-year learners. I have no syllabus in mind; keep the map focused on the conceptual dependencies and say what should be researched before drawing.",
+      "expected_output": "A learner-oriented sequence with one distinct question per proposed infographic, dependency order, a provisional granularity rationale, and research seeds clearly distinguished from verified facts.",
+      "files": [],
+      "expectations": [
+        "The topic map has an understandable dependency order and distinct learner questions.",
+        "The estimate is provisional and the granularity rationale is explicit.",
+        "Facts that need research are marked as seeds rather than asserted as verified."
+      ]
+    }
+  ]
+}

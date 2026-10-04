@@ -45,11 +45,12 @@ Treat the colors as shared visual references. Maintain strong text contrast, and
 
 ## Composition and information density
 
+- Make each infographic creatively specific to its subject, information-rich, easy to follow, and recognizably part of the same series. Creativity should reveal the topic's structure or meaning, not compete with it.
 - Give each infographic one dominant diagram or illustration that explains its central claim.
 - Add two to five useful supporting views, such as a worked example, comparison, boundary case, hierarchy, timeline, or misconception.
 - Use an asymmetric editorial layout with a clear reading path, varied element sizes, and deliberate whitespace.
 - Show relationships through placement, arrows, connectors, containers, and state changes.
-- Make the page rich and orderly. Use meaningful explanatory detail rather than filler.
+- Make the page rich and orderly. Use connected explanatory detail to explore the topic; omit unrelated decoration and side lessons.
 - Let the composition follow the topic. Do not force every work into the same layout.
 
 ## Format guidance
@@ -82,9 +83,10 @@ editorial serif for the main title, legible compact labels, and monospaced type
 for code, addresses, and formulas. Build an asymmetric page around one dominant
 annotated mechanism diagram, then add two to five topic-relevant supporting
 details with a clear reading path. Make the page rich but orderly, with deliberate
-whitespace. Keep colors, typography roles, line language, and surface treatment
-recognizable across topics, while letting each topic have its own composition.
-Do not use generic dashboard grids, equal-sized cards, decorative filler, neon,
+whitespace. Keep colors, typography roles, line language, footer signature, and
+surface treatment recognizable across topics, while letting each topic have its
+own metaphor, illustration, and composition.
+Do not use generic dashboard grids, equal-sized cards, decoration without an explanatory role, neon,
 purple gradients, fake technical labels, invented data, or tiny unreadable text.
 ```
 

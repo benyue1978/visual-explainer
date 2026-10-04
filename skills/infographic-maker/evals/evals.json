@@ -1,0 +1,46 @@
+{
+  "skill_name": "infographic-maker",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Using the reviewed Bits and Bytes brief in this project, prepare the infographic and its publishing package. Keep it English, avoid syllabus and historical clutter, use the exact shared SVG signature, and show me the final image and the Pinterest text/tags.",
+      "expected_output": "A topic-specific visual brief and prompt, accurate composition with exact lower-left shared SVG overlay, descriptive English filename, final image preview, and separate English Pinterest title/description/tags plus website alt text.",
+      "files": ["../../projects/data-representation/bits-and-bytes/content-brief.md", "../../projects/data-representation/bits-and-bytes/visual-brief.md", "../../assets/brand/learn-cs-with-us-lockup.svg"],
+      "expectations": [
+        "The final infographic preserves the reviewed knowledge-first scope and contains no syllabus or historical clutter.",
+        "The exact shared SVG lockup is composited in the lower-left footer, not re-created by the image model.",
+        "The PNG has a descriptive English kebab-case filename and a visible final preview is returned.",
+        "Pinterest title, concise description, tags, and website alt text are separate from the artwork and written in English."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Please make an infographic from this approved content: a stack is LIFO. Starting with [A, B], push C to get [A, B, C]; pop returns C and leaves [A, B]. Audience: beginner programmers. Use this repo's shared visual system, explain one mechanism clearly, and deliver Pinterest and website copy in English. My feedback on a previous Stack infographic: I preferred the version whose title explicitly said ‘Stacks’ and which included a pile-of-books analogy; it felt more informative. I do not require metaphors in every infographic. Supporting analogies, perspectives, and details should stay on-topic and help understanding.",
+      "expected_output": "A mechanism-led infographic that names stacks in the title, preserves the push/pop trace, includes a relevant concrete analogy such as a pile of books (clearly limited as an analogy), keeps supporting detail on-topic, uses the shared brand correctly, and supplies English Pinterest and website metadata separately.",
+      "files": ["../../docs/STYLE.md", "../../docs/INFOGRAPHIC_GUIDE.md", "../../assets/brand/learn-cs-with-us-lockup.svg"],
+      "expectations": [
+        "The image traces the stack state before and after push C and pop, showing that C is returned and [A, B] remains.",
+        "The composition follows the project style and uses the exact shared SVG signature in its reserved footer.",
+        "Pinterest metadata and website alt text are delivered separately and in English.",
+        "The result avoids unsupported details and keeps one dominant explanatory mechanism.",
+        "The title names the stack concept, not only the operations.",
+        "The visual includes a relevant stack analogy such as a pile of books, clearly framed as an analogy rather than literal implementation.",
+        "All supplemental details remain on-topic and improve understanding rather than padding."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Make an infographic from this approved content: a stack is LIFO. Starting with [A, B], push C to get [A, B, C]; pop returns C and leaves [A, B]. Audience: beginner programmers. Use this repo's shared visual system, explain one mechanism clearly, and deliver Pinterest and website copy in English.",
+      "expected_output": "A knowledge-first infographic with a title naming stacks, a correct state trace, and a thoughtful supporting explanation such as a relevant analogy when it offers additional intuition. Supporting detail must remain on-topic and should not be omitted only because the central diagram already explains the rule.",
+      "files": ["../../docs/STYLE.md", "../../docs/INFOGRAPHIC_GUIDE.md", "../../assets/brand/learn-cs-with-us-lockup.svg"],
+      "expectations": [
+        "The image traces [A, B] → [A, B, C] → [A, B], with POP returning C.",
+        "The title clearly names the stack concept.",
+        "The visual brief considers supporting perspectives and does not reject a relevant analogy solely as redundant with the state trace.",
+        "Selected supports help explain the same stack/LIFO mechanism and do not add unrelated content.",
+        "The exact shared brand lockup appears in the lower-left footer.",
+        "Pinterest metadata and website alt text are separately delivered in English."
+      ]
+    }
+  ]
+}

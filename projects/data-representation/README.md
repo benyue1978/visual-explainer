@@ -33,7 +33,7 @@
 - [内部概念覆盖检查](coverage-matrix.md)：概念家族、模块归属、知识连接和待审查点。
 - [Infographic 候选目录](infographic-catalogue.md)：学习问题、解释主线、例子种子和边界；不固定作品数量。
 - [教材参考记录](textbook-reference-notes.md)：区分已从文字确认的描述和仍待原始材料核对的线索。
-- [Content brief 模板](content-brief-template.md)：后续逐项研究和撰写内容时使用。
+- [Content brief 模板](../../docs/CONTENT_BRIEF_TEMPLATE.md)：后续逐项研究和撰写内容时使用。
 - [建议的逐张工作目录](infographic-catalogue.md#建议的逐张工作目录约-18-张)：当前约 18 张的内容粒度估算，最终数量仍开放。
 
 ## 逐项内容规划

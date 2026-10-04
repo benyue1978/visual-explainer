@@ -1,6 +1,6 @@
 # Image generation prompts and workflow
 
-Use this guide with the approved brand anchor in [STYLE.md](STYLE.md) and the topic facts in a project's `content-brief.md`. Production topics live in `projects/<topic>/`; guide examples live in `projects/experiments/<topic>/`.
+Use this guide with the approved brand anchor in [STYLE.md](STYLE.md) and the topic facts in a project's `content-brief.md`. Production topics live in `projects/<topic>/`; the maintained series example is in `projects/data-representation/`.
 
 ## Prompt structure
 
@@ -84,9 +84,10 @@ Review this infographic against the attached content brief and style guide.
 Report only evidenced issues, grouped as:
 1. factual or numeric errors;
 2. incorrect/misleading arrows, grouping, or causal relationships;
-3. missing or misspelled exact labels;
-4. hierarchy, density, or legibility problems;
-5. differences from the shared style anchor.
+3. selected visual-brief details or angles that are missing, too small, or not clearly represented (especially analogies and comparisons);
+4. missing or misspelled exact labels;
+5. hierarchy, richness, density, or legibility problems;
+6. differences from the shared style anchor or brand placement.
 For every issue, identify its location and propose one concrete correction.
 Do not silently rewrite the content or claim a visual element is accurate just
 because it looks plausible.
@@ -97,5 +98,7 @@ because it looks plausible.
 - Use a short list of exact copy; keep longer explanation in captions or a separate text layer.
 - Keep addresses, numeric values, symbols, and units literal in the prompt.
 - Ask for no unsupported numbers or extra labels.
-- Review every image manually against its sourced brief. Image generation is a visual production tool; it does not replace factual review.
+- Review every image against both the ready content brief and the ready visual brief, as well as the style guide. Image generation is a visual production tool; it does not replace factual or visual review.
+- Check that each selected visual-brief element is clearly present in the final image. A mention in the brief or in publishing copy does not count as a visual presentation.
+- Have a separate AI reviewer perform this pass when available; otherwise change to a fresh reviewer role and record concrete findings. Repeat after revisions and mark `READY` only when material content and visual issues are resolved.
 - Use an output that follows the approved brand as a style reference; the written style guide remains the source of truth.

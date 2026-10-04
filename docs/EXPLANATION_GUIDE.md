@@ -39,7 +39,7 @@
 
 只保留当前媒介需要的文件。内容语言由目标受众决定。
 
-当前的指南使用示例放在 `projects/experiments/<topic>/`，目录说明见其中的 `experiments-brief.md`。
+当前维护中的主题示例位于 `projects/data-representation/`。新系列按 `projects/<topic>/` 组织，并遵循相同的内容与视觉审查流程。
 
 ## 研究与准确性
 

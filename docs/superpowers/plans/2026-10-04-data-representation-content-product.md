@@ -16,7 +16,7 @@
 - `projects/data-representation/coverage-matrix.md` — internal review of concept families, where they are explained, cross-module links, and open checks; not a syllabus-objective mapping.
 - `projects/data-representation/infographic-catalogue.md` — candidate learning pieces and example seeds; does not set a final image count.
 - `projects/data-representation/textbook-reference-notes.md` — what is and is not verifiable about the mentioned textbook material, plus the adaptation record format.
-- `projects/data-representation/content-brief-template.md` — reusable research and explanation brief aligned with `docs/CONTENT_GUIDE.md`.
+- `docs/CONTENT_BRIEF_TEMPLATE.md` — reusable research and explanation brief aligned with `docs/CONTENT_GUIDE.md`.
 
 ## Task 1: Create the product entry point
 
@@ -105,7 +105,7 @@
 ## Task 5: Add a reusable content-brief template
 
 **Files:**
-- Create: `projects/data-representation/content-brief-template.md`
+- Create: `docs/CONTENT_BRIEF_TEMPLATE.md`
 
 - [x] **Step 1: Create the learner and scope fields**
 
@@ -121,7 +121,7 @@
 
 - [x] **Step 4: Commit the brief template**
 
-  Run: `git add projects/data-representation/content-brief-template.md && git commit -m "docs: add data representation content brief template"`
+  Run: `git add docs/CONTENT_BRIEF_TEMPLATE.md && git commit -m "docs: add data representation content brief template"`
 
 ## Task 6: Review the package against the approved design and repository guides
 
@@ -130,7 +130,7 @@
 - Review: `projects/data-representation/coverage-matrix.md`
 - Review: `projects/data-representation/infographic-catalogue.md`
 - Review: `projects/data-representation/textbook-reference-notes.md`
-- Review: `projects/data-representation/content-brief-template.md`
+- Review: `docs/CONTENT_BRIEF_TEMPLATE.md`
 - Reference: `docs/superpowers/specs/2026-10-04-data-representation-design.md`
 - Reference: `docs/CONTENT_GUIDE.md`, `docs/EXPLANATION_GUIDE.md`, `docs/INFOGRAPHIC_GUIDE.md`, and `docs/WORKFLOW.md`
 
