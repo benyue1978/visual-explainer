@@ -59,7 +59,7 @@
 - **例子种子：** `173₁₀ = 10101101₂ = AD₁₆`。
 - **边界与易混点：** Hex 是让人更紧凑地读写 binary 的表示法，不是另一种底层数据。
 - **模块连接：** Representing Numbers；可连接后续文本编码中的“数值如何被解释”。
-- **状态：** Candidate。
+- **状态：** 第三项已完成 content brief、visual brief、信息图与英文发布文案；文件位于 `projects/data-representation/number-bases/`。
 
 ### 3. 有符号整数与整数运算
 
