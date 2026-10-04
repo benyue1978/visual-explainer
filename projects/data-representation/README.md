@@ -26,7 +26,7 @@
 - 正式 brief 需区分事实、推导、教学简化和实现差异，并让重要技术断言可追溯到来源。
 - 图上不出现 syllabus 名称或代码、考试年份、章节号、等级徽标或覆盖率标记。术语、公式和例子可按理解需要出现。
 - 教材只作为教学方法的研究线索；重新组织概念并用 Visual CS 的视觉语言表达，不复刻教材页面或插画。
-- 最终作品数量尚未确定。目录中的 13 项是候选解释，之后根据学习目标、worked example 的可读性、内容密度和阅读尺寸决定合并或拆分。
+- 最终作品数量尚未确定；当前建议以约 18 张作为逐张规划的工作估算。目录中的 13 项是宽泛候选主题，已在工作目录里按不同学习问题拆分，之后仍可根据 worked example 的可读性、内容密度和阅读尺寸决定合并或拆分。
 
 ## 内容包
 
@@ -34,9 +34,16 @@
 - [Infographic 候选目录](infographic-catalogue.md)：学习问题、解释主线、例子种子和边界；不固定作品数量。
 - [教材参考记录](textbook-reference-notes.md)：区分已从文字确认的描述和仍待原始材料核对的线索。
 - [Content brief 模板](content-brief-template.md)：后续逐项研究和撰写内容时使用。
+- [建议的逐张工作目录](infographic-catalogue.md#建议的逐张工作目录约-18-张)：当前约 18 张的内容粒度估算，最终数量仍开放。
+
+## 逐项内容规划
+
+- [Bits and Bytes — How Many Patterns Can Eight Bits Hold?](bits-and-bytes/content-brief.md)：第一项内容 brief 已复核；对应的 [visual brief](bits-and-bytes/visual-brief.md) 和[图像初稿](bits-and-bytes/infographic-draft.png)已建立。
+- [Pinterest 与网站发布文案](bits-and-bytes/publishing-copy.md)：第一张图的英文标题、说明、tags 和网站替代文本。
+- 第一项宽泛候选正在细分学习问题：先解释 bit 数与 pattern 数的关系，容量 prefixes 留作相邻内容再规划。这个拆分仍属内容审查，尚未确定最后会制作几张图。
 
 ## 制作阶段
 
-当前阶段建立内容产品文件，不制作第一张图。正式内容 brief 完成并审阅后，再为选定主题编写独立 visual brief、准确文案和图像制作资源。工作方式遵循仓库的[内容准备指南](../../docs/CONTENT_GUIDE.md)、[解释指南](../../docs/EXPLANATION_GUIDE.md)、[信息图制作指南](../../docs/INFOGRAPHIC_GUIDE.md)和[端到端流程](../../docs/WORKFLOW.md)。
+首项内容 brief 已复核，约 18 张的工作目录和第一份 visual brief 已建立，第一张图像初稿已生成；该草稿还需逐项校对文字、数字和图形关系。后续按“内容 brief → visual brief → 图像制作与校对”的顺序逐项推进，工作方式遵循仓库的[内容准备指南](../../docs/CONTENT_GUIDE.md)、[解释指南](../../docs/EXPLANATION_GUIDE.md)、[信息图制作指南](../../docs/INFOGRAPHIC_GUIDE.md)和[端到端流程](../../docs/WORKFLOW.md)。
 
 获批的总体设计见[Data Representation 内容产品设计](../../docs/superpowers/specs/2026-10-04-data-representation-design.md)。

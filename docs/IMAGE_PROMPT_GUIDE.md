@@ -16,6 +16,8 @@ Use this order:
 6. exact learner-facing copy;
 7. factual limits and avoid list.
 
+Keep the shared brand signature out of generated artwork. Ask the image model to leave the reserved lower-left footer area open; composite [`assets/brand/learn-cs-with-us-lockup.svg`](../assets/brand/learn-cs-with-us-lockup.svg) onto the approved composition afterward. This preserves exact spelling, position, and styling across images.
+
 ## Reusable topic prompt
 
 ```text
@@ -38,7 +40,9 @@ COMPOSITION:
 Use a [portrait/landscape] [ratio] page. Make [the central mechanism] the main
 visual. Place [supporting views] where they support the reading path. Vary the
 scale of the details; avoid a regular grid of equal cards. Preserve enough
-whitespace for labels to remain legible.
+whitespace for labels to remain legible. Leave the reserved lower-left brand
+signature area open and clear of other copy; the shared SVG is added after
+image generation.
 
 EXACT COPY:
 Render these labels verbatim: [short, checked list of exact titles, labels,

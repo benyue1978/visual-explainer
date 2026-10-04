@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 260 78"
+     role="img"
+     aria-labelledby="title desc">
+  <title id="title">Learn CS with us · learncs.withus.fun</title>
+  <desc id="desc">Learn CS with us brand name and website address.</desc>
+  <text x="8" y="32"
+        fill="#183142"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="24"
+        font-weight="700">Learn CS with us</text>
+  <circle cx="11" cy="57" r="3" fill="#218F8A" />
+  <text x="21" y="63"
+        fill="#5B7687"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="16"
+        font-weight="500">learncs.withus.fun</text>
+</svg>

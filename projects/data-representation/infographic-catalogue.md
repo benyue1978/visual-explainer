@@ -1,6 +1,33 @@
 # Infographic 候选目录
 
-> **数量未定。** 以下 13 项是候选解释，不是最终海报数量或已批准的逐张制作清单。先确定每项内容要回答的学习问题，再根据机制是否相同、目标阅读尺寸、说明文字密度和 worked example 是否可读来合并或拆分。
+> **工作估算：约 18 张，最终数量未定。** 下方原有 13 项是宽泛候选主题，不等于逐张制作清单。按当前建议的粒度，宽泛主题会在不同机制或例子处拆分；后续再根据图面阅读尺寸、信息密度和 worked example 的可读性合并或调整。
+
+## 建议的逐张工作目录（约 18 张）
+
+这份目录用于帮助判断整套内容的规模。每张围绕一个主要学习问题和一条解释主线；编号是工作顺序，不是考试章节或已锁定的发布数量。
+
+| # | 模块 | 单张图要解释的内容 |
+|---:|---|---|
+| 1 | Bits, Bytes & Magnitudes | 一个 bit 有两种状态；bit 数如何决定 pattern 数；直接建立 `1 byte = 8 bits`、`2^8 = 256 patterns`。 |
+| 2 | Bits, Bytes & Magnitudes | byte 以上的容量单位，以及十进制与二进制前缀各自表示的数量。 |
+| 3 | Representing Numbers | denary、binary 与 hexadecimal 的位值、转换关系及 Hex 的紧凑读写方式。 |
+| 4 | Representing Numbers | unsigned 与 signed 整数怎样解释固定宽度的位模式，以及各自的数值范围。 |
+| 5 | Representing Numbers | 二进制整数加减如何进行，以及固定宽度下 overflow 怎样出现。 |
+| 6 | Representing Numbers | BCD 如何逐个十进制数位编码，以及它与普通 binary 整数的区别。 |
+| 7 | Representing Numbers | logical、arithmetic 与 cyclic shifts 如何移动位，并处理移出或补入的位。 |
+| 8 | Representing Numbers | bitwise logic 与 masks 如何检查、保留或改变指定位置的位。 |
+| 9 | Representing Numbers | floating-point 的字段如何表示数值，以及位宽对范围和精度的影响。 |
+| 10 | Representing Text | 字符如何映射到字符代码并保存为位模式；用 ASCII 与 Unicode 建立范围与编码的概念。 |
+| 11 | Representing Images | bitmap 如何用像素网格、resolution 与 colour depth 描述图像。 |
+| 12 | Representing Images | vector 图形如何用对象、属性与绘制顺序描述图像。 |
+| 13 | Representing Sound | 连续波形如何经过时间采样和振幅量化成为数字声音。 |
+| 14 | Storage & Compression | bitmap 图像的像素参数如何估算未压缩数据量。 |
+| 15 | Storage & Compression | 声音的 sample rate、sample resolution、声道与时长如何估算未压缩数据量。 |
+| 16 | Storage & Compression | RLE 如何利用连续重复的数据形成可逆的压缩表示。 |
+| 17 | Storage & Compression | Huffman 如何利用符号出现频率构造不同长度的可逆编码。 |
+| 18 | Storage & Compression | 有损压缩如何移除部分信息，以及体积和可感知质量如何取舍。 |
+
+**粒度校准：** 若压缩到约 12–14 张，会合并更多不同机制；若拆到每种编码或表示各自独立，可能超过 20 张。当前按约 18 张作为中间粒度，先逐张制作和检查，再依据真实版面决定是否合并或拆分。图面只呈现知识、解释、术语和必要例子，不放 syllabus 标签或覆盖率信息。
 
 ## 决定合并或拆分的标准
 
@@ -9,6 +36,8 @@
 - 至少一个 worked example 能在目标阅读尺寸下展示输入、关键中间状态、结果和单位。
 - 需要区分的概念与适用边界有足够空间，不靠缩小文字来塞进内容。
 - 两个主题只有在共享一个自然的问题和机制时才合并；若机制、先备知识或例子相差太大，就考虑拆开。
+
+**当前内容策划记录：** 第一项宽泛候选拆为两个学习问题：bit 数怎样形成更多 pattern；容量 prefixes 怎样表示十进制与二进制数量级。第一份 brief 处理前者，第二个问题按上述目录单独规划。此工作目录仍可在逐张制作中调整。
 
 目录里的例子均为**例子种子**。它们用于安排内容方向，不等于经过完整来源核查的正式例子。正式 brief 仍需核实输入、每一步、结果、单位，以及教学简化或实现条件。
 
@@ -21,7 +50,7 @@
 - **例子种子：** `1 KiB = 1,024 bytes`，`1 kB = 1,000 bytes`。
 - **边界与易混点：** 区分大小写与前缀体系；单位换算要说明使用哪个目标单位和语境。
 - **模块连接：** Bits, Bytes & Magnitudes；为所有文件大小估算准备单位。
-- **状态：** Candidate。
+- **状态：** 首张图制作中；[bit patterns 内容 brief](bits-and-bytes/content-brief.md) 已复核，[visual brief](bits-and-bytes/visual-brief.md) 与[图像初稿](bits-and-bytes/infographic-draft.png)已建立；容量 prefixes 单独列入工作目录第 2 项。
 
 ### 2. 同一个数的多种写法
 

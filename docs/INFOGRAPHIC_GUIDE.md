@@ -10,7 +10,7 @@ An infographic starts from a well-formed explanation. The visual system should m
 4. **Generate a composition** — combine the [brand style guide](STYLE.md) and [image-prompt template](IMAGE_PROMPT_GUIDE.md) with the topic's exact content. Use the same style anchor across topics; vary the hero illustration and layout to fit the concept.
 5. **Review and revise** — check content, relationships, labels, visual hierarchy, legibility, richness, and brand consistency. Change one main issue at a time and record the final corrections.
 6. **Make exact information editable when needed** — image generation can provide a full visual draft or topic illustration. Move exact text, equations, data, and arrows into SVG, a design tool, or React/TypeScript if they need precise correction or repeated updates.
-7. **Export and record** — save the source brief, prompt, final image, and review notes beside the topic. Choose PNG, SVG, PDF, or a page to fit its actual destination.
+7. **Export and record** — composite the shared brand signature from [`assets/brand/learn-cs-with-us-lockup.svg`](../assets/brand/learn-cs-with-us-lockup.svg) into its reserved footer area. Save the source brief, prompt, final image, publishing title, concise description, tags, alt text, and review notes beside the topic. Keep publishing metadata separate from the artwork and write it in the destination language.
 
 ## What a strong first visual should contain
 

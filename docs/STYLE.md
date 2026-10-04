@@ -92,3 +92,9 @@ purple gradients, fake technical labels, invented data, or tiny unreadable text.
 
 Use this file as the shared visual source of truth. Record topic-specific choices in that project's visual brief. Update this guide when the brand changes, then use the revised rules for new work.
 
+## Shared infographic signature
+
+- Use [`assets/brand/learn-cs-with-us-lockup.svg`](../assets/brand/learn-cs-with-us-lockup.svg) as the exact publisher signature on every finished infographic.
+- Place it in a reserved lower-left footer area, consistently inset and scaled relative to the canvas. Keep the complete lockup legible and clear of explanatory text.
+- Do not ask an image model to redraw or typeset the brand. Prompt the model to leave the signature area open, then composite this SVG as the final vector layer.
+- Keep the brand copy, colors, line break, and relative size from the master unchanged. Update the master only when the shared brand is intentionally revised.
