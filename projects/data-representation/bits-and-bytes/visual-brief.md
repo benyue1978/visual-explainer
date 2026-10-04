@@ -86,7 +86,7 @@ Pinterest 标题、简短说明与 tags，以及网站 alt text 均以英文记�
 
 ## 对应内容来源
 
-- [信息图初稿](infographic-draft.png)：用于图面评审和后续精修，尚不是最终发布版本。
+- [八位可形成 256 种模式的信息图初稿](eight-bits-256-patterns-infographic.png)：用于图面评审和后续精修，尚不是最终发布版本。
 - [Pinterest 与网站发布文案](publishing-copy.md)：英文发布元数据与图片替代文本。
 - [内容 brief](content-brief.md)：术语、概念模型、worked example 和来源依据。
 - [Visual CS 品牌指南](../../../docs/STYLE.md)：色彩、字体、插画与画幅规则。

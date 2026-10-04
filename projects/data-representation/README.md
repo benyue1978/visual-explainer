@@ -38,7 +38,7 @@
 
 ## 逐项内容规划
 
-- [Bits and Bytes — How Many Patterns Can Eight Bits Hold?](bits-and-bytes/content-brief.md)：第一项内容 brief 已复核；对应的 [visual brief](bits-and-bytes/visual-brief.md) 和[图像初稿](bits-and-bytes/infographic-draft.png)已建立。
+- [Bits and Bytes — How Many Patterns Can Eight Bits Hold?](bits-and-bytes/content-brief.md)：第一项内容 brief 已复核；对应的 [visual brief](bits-and-bytes/visual-brief.md) 和[图像初稿](bits-and-bytes/eight-bits-256-patterns-infographic.png)已建立。
 - [Pinterest 与网站发布文案](bits-and-bytes/publishing-copy.md)：第一张图的英文标题、说明、tags 和网站替代文本。
 - 第一项宽泛候选正在细分学习问题：先解释 bit 数与 pattern 数的关系，容量 prefixes 留作相邻内容再规划。这个拆分仍属内容审查，尚未确定最后会制作几张图。
 

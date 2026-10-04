@@ -50,7 +50,7 @@
 - **例子种子：** `1 KiB = 1,024 bytes`，`1 kB = 1,000 bytes`。
 - **边界与易混点：** 区分大小写与前缀体系；单位换算要说明使用哪个目标单位和语境。
 - **模块连接：** Bits, Bytes & Magnitudes；为所有文件大小估算准备单位。
-- **状态：** 首张图制作中；[bit patterns 内容 brief](bits-and-bytes/content-brief.md) 已复核，[visual brief](bits-and-bytes/visual-brief.md) 与[图像初稿](bits-and-bytes/infographic-draft.png)已建立；容量 prefixes 单独列入工作目录第 2 项。
+- **状态：** 首张图制作中；[bit patterns 内容 brief](bits-and-bytes/content-brief.md) 已复核，[visual brief](bits-and-bytes/visual-brief.md) 与[图像初稿](bits-and-bytes/eight-bits-256-patterns-infographic.png)已建立；容量 prefixes 单独列入工作目录第 2 项。
 
 ### 2. 同一个数的多种写法
 
