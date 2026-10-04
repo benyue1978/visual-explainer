@@ -39,8 +39,9 @@
 ## 逐项内容规划
 
 - [Bits and Bytes — How Many Patterns Can Eight Bits Hold?](bits-and-bytes/content-brief.md)：第一项内容 brief 已复核；对应的 [visual brief](bits-and-bytes/visual-brief.md) 和[图像初稿](bits-and-bytes/eight-bits-256-patterns-infographic.png)已建立。
+- [Data Size Prefixes — kB vs KiB, MB vs MiB](byte-prefixes/content-brief.md)：第二项内容 brief 和 visual brief 已复核；[成图](byte-prefixes/data-size-prefixes-kb-kib-mb-mib-infographic.png)、[发布文案](byte-prefixes/publishing-copy.md)和[最终图像复核](byte-prefixes/review-notes.md)已完成。
 - [Pinterest 与网站发布文案](bits-and-bytes/publishing-copy.md)：第一张图的英文标题、说明、tags 和网站替代文本。
-- 第一项宽泛候选正在细分学习问题：先解释 bit 数与 pattern 数的关系，容量 prefixes 留作相邻内容再规划。这个拆分仍属内容审查，尚未确定最后会制作几张图。
+- 第一项宽泛候选已细分为两个学习问题：先解释 bit 数与 pattern 数的关系，再解释容量 prefixes；该内容路径仍可调整，也不预设最终作品数量。
 
 ## 制作阶段
 
