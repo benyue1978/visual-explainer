@@ -18,6 +18,12 @@
 - 分清容易混淆的概念，例如数值表示与字符编码、图像分辨率与色深、声音采样率与采样精度，以及有损与无损压缩。
 - 理解不同表示与压缩方式带来的容量、精度、质量和可恢复性取舍。
 
+### 目标学习者与先备知识
+
+主要读者是学习 Cambridge IGCSE 与 AS/A Level Computer Science 的学生，也包括需要讲授这些概念的教师。图面默认使用英语术语与文案；本设计稿和内部 brief 使用中文。
+
+学习者预计理解十进制位值与整数四则运算。课程从 bit 和 binary 的基本含义开始讲，不假设学生具备电子学、编程或数字音频背景；必要概念会在第一次使用时解释。
+
 ## 2. 产品原则
 
 ### 2.1 以概念组织内容
@@ -39,7 +45,7 @@
 
 ### 2.3 以具体例子支撑解释
 
-每一项 infographic 内容都要包含至少一个完整、可追踪的 worked example。例子服务于概念解释，避免仅用术语、公式或装饰性图形填充页面。适合时，可在相邻内容间复用一个例子，帮助学习者看见概念之间的关系。
+每一项 infographic 内容都要包含至少一个完整、可追踪的 worked example。正式 brief 必须给出准确输入、关键中间状态、最终结果和单位处理，并核实每一步。目录里的例子种子用于比较内容方向，不能代替正式 worked example。例子服务于概念解释，避免仅用术语、公式或装饰性图形填充页面。适合时，可在相邻内容间复用一个例子，帮助学习者看见概念之间的关系。
 
 ### 2.4 图面不出现考试标签
 
@@ -53,6 +59,8 @@
 
 产品由一个总问题串联：**计算机怎样把不同信息变成 bits，又怎样解释、计算、存储和压缩这些 bits？**
 
+开篇先用一组相同的 bits 建立全课程主线：`01000001` 在 unsigned binary 下表示 `65`，在 ASCII 字符编码下表示 `A`。重点是位模式本身不标注含义；它的解释取决于使用的表示规则。后续数字和文本模块再次调用这组例子，形成前后连接。这是一个开篇教学装置，可以并入第一项内容，不额外规定一张独立海报。
+
 | 模块 | 学习问题 | 核心概念 | 与后续内容的连接 |
 |---|---|---|---|
 | 1. Bits, Bytes & Magnitudes | 信息如何用有限的二进制状态表示，容量又如何衡量？ | bit、nibble、byte、二进制数量级、容量单位、binary 与 decimal prefixes | 为所有后续数据类型建立共同底层与容量尺度 |
@@ -60,7 +68,7 @@
 | 3. Representing Text | 字符如何转换为数值和二进制？ | character set、character code、ASCII、extended ASCII、Unicode | 连接符号、数值和具体二进制编码 |
 | 4. Representing Images | 计算机如何描述像素图和图形对象？ | bitmap、pixel、file header、image/screen resolution、colour depth、vector object、property、drawing list | 为图片质量与文件大小计算准备概念 |
 | 5. Representing Sound | 连续声音如何成为离散数据？ | analogue/digital、sampling、sample rate、sample resolution、accuracy | 为声音文件大小与压缩建立模型 |
-| 6. Storage & Compression | 不同数据表示占多少空间，压缩改变了什么？ | 图像与声音大小估算、存储与传输需求、有损与无损压缩、RLE 及适用的其他方法 | 汇总前五个模块，呈现体积、质量与信息保留的取舍 |
+| 6. Storage & Compression | 不同数据表示占多少空间，压缩改变了什么？ | 图像与声音大小估算、存储与传输需求、有损与无损压缩、RLE 与 Huffman 等编码方法 | 汇总前五个模块，呈现体积、质量与信息保留的取舍 |
 
 ## 4. 内部概念覆盖检查
 
@@ -72,18 +80,18 @@
 | 整数与数值表示 | binary/denary/hexadecimal、进制转换、Hex 的用途、有符号数、one’s/two’s complement、BCD | Representing Numbers | 分清位模式、解释规则与数值；BCD 与普通二进制的差异 |
 | 数值运算与 bit 操作 | 加减法、overflow、logical/arithmetic/cyclic shifts、bitwise operations、masking | Representing Numbers | 位宽、丢失或补入的位，以及移位与算术结果的关系 |
 | 实数表示 | mantissa、exponent、normalisation、精度、范围、rounding、overflow/underflow | Representing Numbers | 明确浮点是有限精度近似，示例每一步一致 |
-| 文本编码 | character set、字符代码、ASCII、extended ASCII、Unicode | Representing Text | 编码映射不是字符本身；不要求背诵不必要的字符码 |
+| 文本编码 | character set、字符代码、ASCII、extended ASCII、Unicode 及其字符范围差异 | Representing Text | 编码映射不是字符本身；比较字符范围与编码容量，不要求背诵不必要的字符码 |
 | 图像表示 | bitmap、header、像素、resolution、screen resolution、colour depth、vector drawing objects/properties/list | Representing Images | 清楚区分像素网格和绘图对象；解释质量、缩放与容量 |
-| 声音表示 | analogue/digital、sampling、sample rate、sample resolution | Representing Sound | 横向时间采样与纵向振幅精度分别解释 |
-| 文件大小与压缩 | 图片/声音大小估算、有损/无损、RLE、Huffman 与媒体适用性 | Storage & Compression | 先解释目的和取舍，再展示方法；区分无损方法的编码思路与建树操作 |
+| 声音表示 | analogue/digital、sampling、sample rate、sample resolution，以及采样参数对准确度与文件大小的影响 | Representing Sound | 横向时间采样与纵向振幅精度分别解释，再连接到准确度和数据量 |
+| 文件大小与压缩 | 图片/声音大小估算、有损/无损、RLE、Huffman 与媒体适用性 | Storage & Compression | 将大小计算、无损编码和有损取舍分开解释；涵盖文本、bitmap、vector 与 sound 的相关压缩方式；区分编码思路与建树操作 |
 
 矩阵中的检查结果只供内容团队审阅。若来源要求出现新的概念，优先判断它属于哪一个知识家族、会改变哪个学习目标，以及是否需要拆出新的学习内容；不为填满一张 syllabus 表而自动增加图。
 
 ## 5. Infographic Catalogue 草案
 
-以下是内容候选，不是固定的海报数量。每项先确定学习问题与解释机制，再根据内容密度决定合并或拆分。
+以下是内容候选，不是固定的海报数量。每项先确定学习问题与解释机制，再根据内容密度决定合并或拆分。表里的 worked example 是例子种子；正式 brief 要补足精确输入、过程、结果和校验。
 
-| 内容项 | 学习问题与解释主线 | Worked example 候选 | 易混点或边界 |
+| 内容项 | 学习问题与解释主线 | Worked example 种子 | 易混点或边界 |
 |---|---|---|---|
 | 位与容量 | 从 bit 逐步扩展到 byte 与更大容量单位，并比较二进制和十进制前缀 | `1 KiB = 1,024 bytes` 与 `1 kB = 1,000 bytes`；比较一组 GiB/GB 数值 | `KiB` 与 `kB` 的符号、数量级及题目指定的目标单位 |
 | 同一个数的多种写法 | 同一整数在 denary、binary、hexadecimal 中如何保持相同数值；Hex 为何更紧凑 | `173₁₀ = 10101101₂ = AD₁₆` | Hex 是 binary 的简洁人类表示，不是另一种计算机底层数据 |
@@ -96,7 +104,8 @@
 | Vector 图形 | 绘图对象、属性和绘图列表如何描述图像，何时适合使用 vector | 用圆形、线段及其属性重建简单图形 | vector 与 bitmap 的表示方式和放大结果不同 |
 | 声音 | 连续波形如何经采样与量化形成数字数值 | 8 个采样点映射到有限振幅级别 | sample rate 控制时间采样密度；sample resolution 控制振幅级别 |
 | 文件大小 | 图片像素/色深与声音采样/时长如何形成估算大小 | `320 × 200 × 8 = 512,000 bits = 64,000 bytes`；`8000 samples/s × 8 bits/sample × 2 s = 128,000 bits = 16,000 bytes` | 区分 bit 与 byte，按题目要求处理单位和精度；说明结果是原始数据量估算，不含未给出的 header 或压缩开销 |
-| 压缩 | 为什么压缩，以及 lossy/lossless 在容量与信息保留上的取舍 | `AAAAAAAAAABBBCC` 的 RLE 编码；用简短符号频率例子说明 Huffman 的变长编码；图像或声音压缩前后对照 | 有损会永久丢失信息；涵盖文本、bitmap、vector、sound，以及适用时的 video；Huffman 着重编码思路，不默认要求建树 |
+| 无损压缩 | 重复模式和符号频率如何形成较短的编码？ | `AAAAAAAAAABBBCC` → RLE `10A 3B 2C`；频率 A:10、B:3、C:2，可用一个有效 Huffman 编码示例 A:`1`、B:`01`、C:`00`，payload 为 20 bits（不计字典或 header） | 原始信息可以完整还原；RLE 与 Huffman 利用不同的数据规律，实际文件还要考虑保存编码信息的开销 |
+| 有损压缩 | 为什么永久移除部分信息，容量下降会怎样影响质量？ | 一组图像或声音压缩前后的细节对照 | 适用于图像、声音或视频等场景；不把 lossy 写成可无损还原 |
 
 图册可在内容审核后补充或拆分项目，例如将 storage prefixes 单独成图，或将不同 bit 操作拆开。最终决定依据是每张图是否只有一个清晰学习目标、是否能在目标阅读尺寸下展示必需解释，以及 worked example 是否可读。
 
